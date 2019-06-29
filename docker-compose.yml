@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  gateway.main:
+    image: trivia.api.gateway.main
+    build:
+      context: .
+      dockerfile: Gateway.Main/Dockerfile
+    network_mode: bridge
